@@ -1,0 +1,38 @@
+﻿<UserControl x:Class="ProyectoSegundoParcial.ParametrosGalletas"
+             xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+             xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+             xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006" 
+             xmlns:d="http://schemas.microsoft.com/expression/blend/2008" 
+             xmlns:local="clr-namespace:ProyectoSegundoParcial"
+             mc:Ignorable="d" 
+             d:DesignHeight="200" d:DesignWidth="740" Background="#FFFFB300">
+    <Grid>
+        <TextBlock HorizontalAlignment="Left" Margin="10,10,0,0" TextWrapping="Wrap" Text="Nombre del Producto:" VerticalAlignment="Top"/>
+        <TextBox Name="txtNombreProducto" HorizontalAlignment="Left" Height="23" Margin="145,9,0,0" TextWrapping="Wrap" Text="" VerticalAlignment="Top" Width="120"/>
+        <TextBlock HorizontalAlignment="Left" Margin="10,38,0,0" TextWrapping="Wrap" Text="Precio:" VerticalAlignment="Top"/>
+        <TextBox Name="txtPrecio" HorizontalAlignment="Left" Height="23" Margin="145,37,0,0" TextWrapping="Wrap" Text="" VerticalAlignment="Top" Width="120"/>
+        <TextBlock HorizontalAlignment="Left" Margin="10,66,0,0" TextWrapping="Wrap" Text="Código:" VerticalAlignment="Top"/>
+        <TextBox x:Name="txtCodigo" HorizontalAlignment="Left" Height="23" Margin="145,65,0,0" TextWrapping="Wrap" Text="" VerticalAlignment="Top" Width="120"/>
+        <TextBlock HorizontalAlignment="Left" Margin="10,94,0,0" TextWrapping="Wrap" Text="Descuento:" VerticalAlignment="Top"/>
+        <TextBox Name="txtDescuento" HorizontalAlignment="Left" Height="23" Margin="145,93,0,0" TextWrapping="Wrap" Text="" VerticalAlignment="Top" Width="120"/>
+        <TextBlock HorizontalAlignment="Left" Margin="10,122,0,0" TextWrapping="Wrap" Text="Provedor:" VerticalAlignment="Top"/>
+        <TextBox Name="txtProvedor" HorizontalAlignment="Left" Height="23" Margin="145,121,0,0" TextWrapping="Wrap" Text="" VerticalAlignment="Top" Width="120"/>
+        <TextBlock HorizontalAlignment="Left" Margin="320,10,0,0" TextWrapping="Wrap" Text="Marca:" VerticalAlignment="Top"/>
+        <ComboBox Name="cbMarca" HorizontalAlignment="Left" Margin="380,9,0,0" VerticalAlignment="Top" Width="120">
+            <ComboBoxItem>Marinela</ComboBoxItem>
+            <ComboBoxItem>Gamesa</ComboBoxItem>
+            <ComboBoxItem>Tía Rosa</ComboBoxItem>
+            <ComboBoxItem>Nabisco</ComboBoxItem>
+        </ComboBox>
+        <RadioButton x:Name="rbtnCantidad500gr" Content="500 gramos" HorizontalAlignment="Left" Margin="380,50,0,0" VerticalAlignment="Top"/>
+        <RadioButton x:Name="rbtnCantidad400gr" Content="400 gramos" HorizontalAlignment="Left" Margin="380,70,0,0" VerticalAlignment="Top"/>
+        <RadioButton x:Name="rbtnCantidad250gr" Content="250 gramos" HorizontalAlignment="Left" Margin="380,90,0,0" VerticalAlignment="Top"/>
+        <RadioButton x:Name="rbtnCantidad100gr" Content="100 gramos" HorizontalAlignment="Left" Margin="380,110,0,0" VerticalAlignment="Top"/>
+        <RadioButton x:Name="rbtnCantidad75gr" Content="75 gramos" HorizontalAlignment="Left" Margin="380,130,0,0" VerticalAlignment="Top"/>
+        <TextBlock HorizontalAlignment="Left" Margin="320,50,0,0" TextWrapping="Wrap" Text="Cantidad:" VerticalAlignment="Top"/>
+        <CheckBox Name="chbBueno" Content="Bueno" HorizontalAlignment="Left" Margin="145,149,0,0" VerticalAlignment="Top"/>
+        <CheckBox Name="chbMalo" Content="Malo" HorizontalAlignment="Left" Margin="145,169,0,0" VerticalAlignment="Top"/>
+        <TextBlock HorizontalAlignment="Left" Margin="10,148,0,0" TextWrapping="Wrap" Text="Estado del producto:" VerticalAlignment="Top"/>
+
+    </Grid>
+</UserControl>
