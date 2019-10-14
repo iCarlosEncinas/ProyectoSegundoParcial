@@ -23,7 +23,9 @@ namespace ProyectoSegundoParcial
         public MainWindow()
         {
             InitializeComponent();
+            
         }
+
 
         private void BtnAgregar_Click(object sender, RoutedEventArgs e)
         {
@@ -60,6 +62,11 @@ namespace ProyectoSegundoParcial
 
         }
 
+        public static explicit operator MainWindow(TextBox v)
+        {
+            throw new NotImplementedException();
+        }
+
         private void BtnGuardarM_Click(object sender, RoutedEventArgs e)
         {
             switch (cbProductos.SelectedIndex)
@@ -69,18 +76,13 @@ namespace ProyectoSegundoParcial
                     if(parametrosrefresco.txtNombreProducto.Text == "" || parametrosrefresco.txtCodigo.Text == "" || parametrosrefresco.txtDescuento.Text == "" ||
                     parametrosrefresco.txtPrecio.Text == "" || parametrosrefresco.txtProvedor.Text == "")
                     {
-                        lAdvertencia.Visibility = Visibility.Visible;
+                        parametrosrefresco.lAdvertencia.Visibility = Visibility.Visible;
                     }
                     else
                     {
                         grdParametros.Visibility = Visibility.Hidden;
                         btnGuardarM.Visibility = Visibility.Hidden;
                         btnCancelar.Visibility = Visibility.Hidden;
-                    }
-                    if(parametrosrefresco.txtNombreProducto.Text != "" && parametrosrefresco.txtCodigo.Text != "" && parametrosrefresco.txtDescuento.Text != "" &&
-                    parametrosrefresco.txtPrecio.Text != "" && parametrosrefresco.txtProvedor.Text != "")
-                    {
-                        lAdvertencia.Visibility = Visibility.Hidden;
                     }
                     break;
 
@@ -89,7 +91,7 @@ namespace ProyectoSegundoParcial
                     if (parametrosleche.txtNombreProducto.Text == "" || parametrosleche.txtCodigo.Text == "" || parametrosleche.txtDescuento.Text == "" ||
                     parametrosleche.txtPrecio.Text == "" || parametrosleche.txtProvedor.Text == "")
                     {
-                        lAdvertencia.Visibility = Visibility.Visible;
+                        parametrosleche.lAdvertencia.Visibility = Visibility.Visible;
                     }
                     else
                     {
@@ -97,19 +99,14 @@ namespace ProyectoSegundoParcial
                         btnGuardarM.Visibility = Visibility.Hidden;
                         btnCancelar.Visibility = Visibility.Hidden;
                     }
-                    if (parametrosleche.txtNombreProducto.Text != "" && parametrosleche.txtCodigo.Text != "" && parametrosleche.txtDescuento.Text != "" &&
-                    parametrosleche.txtPrecio.Text != "" && parametrosleche.txtProvedor.Text != "")
-                    {
-                        lAdvertencia.Visibility = Visibility.Hidden;
-                    }
                     break;
-
+                    
                 case 2:
                     var parametrosjabones = ((ParametrosJabones)(grdParametros.Children[0]));
                     if (parametrosjabones.txtNombreProducto.Text == "" || parametrosjabones.txtCodigo.Text == "" || parametrosjabones.txtDescuento.Text == "" ||
                     parametrosjabones.txtPrecio.Text == "" || parametrosjabones.txtProvedor.Text == "")
                     {
-                        lAdvertencia.Visibility = Visibility.Visible;
+                        parametrosjabones.lAdvertencia.Visibility = Visibility.Visible;
                     }
                     else
                     {
@@ -117,30 +114,20 @@ namespace ProyectoSegundoParcial
                         btnGuardarM.Visibility = Visibility.Hidden;
                         btnCancelar.Visibility = Visibility.Hidden;
                     }
-                    if (parametrosjabones.txtNombreProducto.Text != "" && parametrosjabones.txtCodigo.Text != "" && parametrosjabones.txtDescuento.Text != "" &&
-                    parametrosjabones.txtPrecio.Text != "" && parametrosjabones.txtProvedor.Text != "")
-                    {
-                        lAdvertencia.Visibility = Visibility.Hidden;
-                    }
                     break;
-
+                    
                 case 3:
                     var parametroschicles = ((ParametrosChicles)(grdParametros.Children[0]));
                     if (parametroschicles.txtNombreProducto.Text == "" || parametroschicles.txtCodigo.Text == "" || parametroschicles.txtDescuento.Text == "" ||
                     parametroschicles.txtPrecio.Text == "" || parametroschicles.txtProvedor.Text == "")
                     {
-                        lAdvertencia.Visibility = Visibility.Visible;
+                        parametroschicles.lAdvertencia.Visibility = Visibility.Visible;
                     }
                     else
                     {
                         grdParametros.Visibility = Visibility.Hidden;
                         btnGuardarM.Visibility = Visibility.Hidden;
                         btnCancelar.Visibility = Visibility.Hidden;
-                    }
-                    if (parametroschicles.txtNombreProducto.Text != "" && parametroschicles.txtCodigo.Text != "" && parametroschicles.txtDescuento.Text != "" &&
-                    parametroschicles.txtPrecio.Text != "" && parametroschicles.txtProvedor.Text != "")
-                    {
-                        lAdvertencia.Visibility = Visibility.Hidden;
                     }
                     break;
 
@@ -149,18 +136,13 @@ namespace ProyectoSegundoParcial
                     if (parametrosgalletas.txtNombreProducto.Text == "" || parametrosgalletas.txtCodigo.Text == "" || parametrosgalletas.txtDescuento.Text == "" ||
                     parametrosgalletas.txtPrecio.Text == "" || parametrosgalletas.txtProvedor.Text == "")
                     {
-                        lAdvertencia.Visibility = Visibility.Visible;
+                        parametrosgalletas.lAdvertencia.Visibility = Visibility.Visible;
                     }
                     else
                     {
                         grdParametros.Visibility = Visibility.Hidden;
                         btnGuardarM.Visibility = Visibility.Hidden;
                         btnCancelar.Visibility = Visibility.Hidden;
-                    }
-                    if (parametrosgalletas.txtNombreProducto.Text != "" && parametrosgalletas.txtCodigo.Text != "" && parametrosgalletas.txtDescuento.Text != "" &&
-                    parametrosgalletas.txtPrecio.Text != "" && parametrosgalletas.txtProvedor.Text != "")
-                    {
-                        lAdvertencia.Visibility = Visibility.Hidden;
                     }
                     break;
 
@@ -169,7 +151,7 @@ namespace ProyectoSegundoParcial
                     if (parametrosfrituras.txtNombreProducto.Text == "" || parametrosfrituras.txtCodigo.Text == "" || parametrosfrituras.txtDescuento.Text == "" ||
                     parametrosfrituras.txtPrecio.Text == "" || parametrosfrituras.txtProvedor.Text == "")
                     {
-                        lAdvertencia.Visibility = Visibility.Visible;
+                        parametrosfrituras.lAdvertencia.Visibility = Visibility.Visible;
                     }
                     else
                     {
@@ -177,50 +159,9 @@ namespace ProyectoSegundoParcial
                         btnGuardarM.Visibility = Visibility.Hidden;
                         btnCancelar.Visibility = Visibility.Hidden;
                     }
-                    if (parametrosfrituras.txtNombreProducto.Text != "" && parametrosfrituras.txtCodigo.Text != "" && parametrosfrituras.txtDescuento.Text != "" &&
-                    parametrosfrituras.txtPrecio.Text != "" && parametrosfrituras.txtProvedor.Text != "")
-                    {
-                        lAdvertencia.Visibility = Visibility.Hidden;
-                    }
                     break;
             }
 
-            /*if (parametrosrefresco.txtNombreProducto.Text == "" || parametrosrefresco.txtCodigo.Text == "" || parametrosrefresco.txtDescuento.Text == "" ||
-               parametrosrefresco.txtPrecio.Text == "" || parametrosrefresco.txtProvedor.Text == "" || 
-               parametrosleche.txtNombreProducto.Text == "" || parametrosleche.txtCodigo.Text == "" || parametrosleche.txtDescuento.Text == "" ||
-               parametrosleche.txtPrecio.Text == "" || parametrosleche.txtProvedor.Text == "" ||
-               parametrosjabones.txtNombreProducto.Text == "" || parametrosjabones.txtCodigo.Text == "" || parametrosjabones.txtDescuento.Text == "" ||
-               parametrosjabones.txtPrecio.Text == "" || parametrosjabones.txtProvedor.Text == "" ||
-               parametroschicles.txtNombreProducto.Text == "" || parametroschicles.txtCodigo.Text == "" || parametroschicles.txtDescuento.Text == "" ||
-               parametroschicles.txtPrecio.Text == "" || parametroschicles.txtProvedor.Text == "" ||
-               parametrosgalletas.txtNombreProducto.Text == "" || parametrosgalletas.txtCodigo.Text == "" || parametrosgalletas.txtDescuento.Text == "" ||
-               parametrosgalletas.txtPrecio.Text == "" || parametrosgalletas.txtProvedor.Text == "" ||
-               parametrosfrituras.txtNombreProducto.Text == "" || parametrosfrituras.txtCodigo.Text == "" || parametrosfrituras.txtDescuento.Text == "" ||
-               parametrosfrituras.txtPrecio.Text == "" || parametrosfrituras.txtProvedor.Text == "")
-            {
-                lAdvertencia.Visibility = Visibility.Visible;
-            }
-            else
-            {
-                grdParametros.Visibility = Visibility.Hidden;
-                btnGuardarM.Visibility = Visibility.Hidden;
-                btnCancelar.Visibility = Visibility.Hidden;
-            }
-            if (parametrosrefresco.txtNombreProducto.Text != "" || parametrosrefresco.txtCodigo.Text != "" || parametrosrefresco.txtDescuento.Text != "" ||
-               parametrosrefresco.txtPrecio.Text != "" || parametrosrefresco.txtProvedor.Text != "" ||
-               parametrosleche.txtNombreProducto.Text != "" || parametrosleche.txtCodigo.Text != "" || parametrosleche.txtDescuento.Text != "" ||
-               parametrosleche.txtPrecio.Text != "" || parametrosleche.txtProvedor.Text != "" ||
-               parametrosjabones.txtNombreProducto.Text != "" || parametrosjabones.txtCodigo.Text != "" || parametrosjabones.txtDescuento.Text != "" ||
-               parametrosjabones.txtPrecio.Text != "" || parametrosjabones.txtProvedor.Text != "" ||
-               parametroschicles.txtNombreProducto.Text != "" || parametroschicles.txtCodigo.Text != "" || parametroschicles.txtDescuento.Text != "" ||
-               parametroschicles.txtPrecio.Text != "" || parametroschicles.txtProvedor.Text != "" ||
-               parametrosgalletas.txtNombreProducto.Text != "" || parametrosgalletas.txtCodigo.Text != "" || parametrosgalletas.txtDescuento.Text != "" ||
-               parametrosgalletas.txtPrecio.Text != "" || parametrosgalletas.txtProvedor.Text != "" ||
-               parametrosfrituras.txtNombreProducto.Text != "" || parametrosfrituras.txtCodigo.Text != "" || parametrosfrituras.txtDescuento.Text != "" ||
-               parametrosfrituras.txtPrecio.Text != "" || parametrosfrituras.txtProvedor.Text != "")
-            {
-                lAdvertencia.Visibility = Visibility.Hidden;
-            }*/
         }
 
         private void BtnCancelar_Click(object sender, RoutedEventArgs e)
@@ -228,7 +169,7 @@ namespace ProyectoSegundoParcial
             grdParametros.Visibility = Visibility.Hidden;
             btnCancelar.Visibility = Visibility.Hidden;
             btnGuardarM.Visibility = Visibility.Hidden;
-            lAdvertencia.Visibility = Visibility.Hidden;
         }
+
     }
 }

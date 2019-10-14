@@ -24,5 +24,35 @@ namespace ProyectoSegundoParcial
         {
             InitializeComponent();
         }
+
+        private void TxtNombreProducto_TextChanged(object sender, TextChangedEventArgs e)
+        {
+            lAdvertencia.Visibility = Visibility.Hidden;
+
+        }
+
+        private void TxtPrecio_TextChanged(object sender, TextChangedEventArgs e)
+        {
+            lAdvertencia.Visibility = Visibility.Hidden;
+
+        }
+
+        private void TxtCodigo_TextChanged(object sender, TextChangedEventArgs e)
+        {
+            lAdvertencia.Visibility = Visibility.Hidden;
+
+        }
+
+        private void TxtDescuento_TextChanged(object sender, TextChangedEventArgs e)
+        {
+            lAdvertencia.Visibility = Visibility.Hidden;
+
+        }
+
+        private void TxtProvedor_TextChanged(object sender, TextChangedEventArgs e)
+        {
+            lAdvertencia.Visibility = Visibility.Hidden;
+
+        }
     }
 }

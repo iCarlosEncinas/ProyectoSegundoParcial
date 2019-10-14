@@ -12,6 +12,7 @@ using System.Windows.Media;
 using System.Windows.Media.Imaging;
 using System.Windows.Navigation;
 using System.Windows.Shapes;
+using System.Xml.Linq;
 
 namespace ProyectoSegundoParcial
 {
@@ -20,10 +21,38 @@ namespace ProyectoSegundoParcial
     /// </summary>
     public partial class ParametrosRefresco : UserControl
     {
+
         public ParametrosRefresco()
         {
             InitializeComponent();
+        }      
+
+        public void TxtNombreProducto_TextChanged(object sender, TextChangedEventArgs e)
+        {
+            lAdvertencia.Visibility = Visibility.Hidden;
         }
 
+        private void TxtPrecio_TextChanged(object sender, TextChangedEventArgs e)
+        {
+            lAdvertencia.Visibility = Visibility.Hidden;
+        }
+
+        private void TxtCodigo_TextChanged(object sender, TextChangedEventArgs e)
+        {
+            lAdvertencia.Visibility = Visibility.Hidden;
+
+        }
+
+        private void TxtDescuento_TextChanged(object sender, TextChangedEventArgs e)
+        {
+            lAdvertencia.Visibility = Visibility.Hidden;
+
+        }
+
+        private void TxtProvedor_TextChanged(object sender, TextChangedEventArgs e)
+        {
+            lAdvertencia.Visibility = Visibility.Hidden;
+
+        }
     }
 }

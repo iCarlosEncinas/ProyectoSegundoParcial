@@ -8,15 +8,15 @@
              d:DesignHeight="200" d:DesignWidth="740" Background="#FFFFB300">
     <Grid>
         <TextBlock HorizontalAlignment="Left" Margin="10,10,0,0" TextWrapping="Wrap" Text="Nombre del Producto:" VerticalAlignment="Top"/>
-        <TextBox Name="txtNombreProducto" HorizontalAlignment="Left" Height="23" Margin="145,9,0,0" TextWrapping="Wrap" Text="" VerticalAlignment="Top" Width="120"/>
+        <TextBox Name="txtNombreProducto" HorizontalAlignment="Left" Height="23" Margin="145,9,0,0" TextWrapping="Wrap" Text="" VerticalAlignment="Top" Width="120" TextChanged="TxtNombreProducto_TextChanged"/>
         <TextBlock HorizontalAlignment="Left" Margin="10,38,0,0" TextWrapping="Wrap" Text="Precio:" VerticalAlignment="Top"/>
-        <TextBox Name="txtPrecio" HorizontalAlignment="Left" Height="23" Margin="145,37,0,0" TextWrapping="Wrap" Text="" VerticalAlignment="Top" Width="120"/>
+        <TextBox Name="txtPrecio" HorizontalAlignment="Left" Height="23" Margin="145,37,0,0" TextWrapping="Wrap" Text="" VerticalAlignment="Top" Width="120" TextChanged="TxtPrecio_TextChanged"/>
         <TextBlock HorizontalAlignment="Left" Margin="10,66,0,0" TextWrapping="Wrap" Text="Código:" VerticalAlignment="Top"/>
-        <TextBox x:Name="txtCodigo" HorizontalAlignment="Left" Height="23" Margin="145,65,0,0" TextWrapping="Wrap" Text="" VerticalAlignment="Top" Width="120"/>
+        <TextBox x:Name="txtCodigo" HorizontalAlignment="Left" Height="23" Margin="145,65,0,0" TextWrapping="Wrap" Text="" VerticalAlignment="Top" Width="120" TextChanged="TxtCodigo_TextChanged"/>
         <TextBlock HorizontalAlignment="Left" Margin="10,94,0,0" TextWrapping="Wrap" Text="Descuento:" VerticalAlignment="Top"/>
-        <TextBox Name="txtDescuento" HorizontalAlignment="Left" Height="23" Margin="145,93,0,0" TextWrapping="Wrap" Text="" VerticalAlignment="Top" Width="120"/>
+        <TextBox Name="txtDescuento" HorizontalAlignment="Left" Height="23" Margin="145,93,0,0" TextWrapping="Wrap" Text="" VerticalAlignment="Top" Width="120" TextChanged="TxtDescuento_TextChanged"/>
         <TextBlock HorizontalAlignment="Left" Margin="10,122,0,0" TextWrapping="Wrap" Text="Provedor:" VerticalAlignment="Top"/>
-        <TextBox Name="txtProvedor" HorizontalAlignment="Left" Height="23" Margin="145,121,0,0" TextWrapping="Wrap" Text="" VerticalAlignment="Top" Width="120"/>
+        <TextBox Name="txtProvedor" HorizontalAlignment="Left" Height="23" Margin="145,121,0,0" TextWrapping="Wrap" Text="" VerticalAlignment="Top" Width="120" TextChanged="TxtProvedor_TextChanged"/>
         <TextBlock HorizontalAlignment="Left" Margin="320,10,0,0" TextWrapping="Wrap" Text="Marca:" VerticalAlignment="Top"/>
         <ComboBox Name="cbMarca" HorizontalAlignment="Left" Margin="380,9,0,0" VerticalAlignment="Top" Width="120">
             <ComboBoxItem>Axión</ComboBoxItem>
@@ -32,6 +32,7 @@
         <CheckBox Name="chbBueno" Content="Bueno" HorizontalAlignment="Left" Margin="145,149,0,0" VerticalAlignment="Top"/>
         <CheckBox Name="chbMalo" Content="Malo" HorizontalAlignment="Left" Margin="145,169,0,0" VerticalAlignment="Top"/>
         <TextBlock HorizontalAlignment="Left" Margin="10,148,0,0" TextWrapping="Wrap" Text="Estado del producto:" VerticalAlignment="Top"/>
+        <Label Name="lAdvertencia" Foreground="Red" Visibility="Hidden" FontFamily="Impact" Content="*Todas las cajas de texto deben ser llenadas" HorizontalAlignment="Left" Margin="503,166,0,0" VerticalAlignment="Top"/>
 
     </Grid>
 </UserControl>
